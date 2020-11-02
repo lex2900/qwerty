@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic-ext');
+
+@font-face {
+	font-family: 'TITILLIUM';
+	src: url('../fonts/TITILLIUM-REGULAR.eot');
+	src: local('☺'), url('../fonts/TITILLIUM-REGULAR.woff') format('woff'), url('../fonts/TITILLIUM-REGULAR.ttf') format('truetype'), url('../fonts/TITILLIUM-REGULAR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'titillium';
+}
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+//$n - переменная
+//&:hover - внутри блока обращается к блоку
+//%text { font-size: 2px;} - шаблон вставляется через "@extend %text;"
+//@mixin NAME
+
+%section {
+	min-height: 100vh;
+	display: flex;}
+%content {
+	flex: 1 1 auto;
+	max-width: 78.75%;
+	max-height: 81.69%;
+	margin: 0px auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	color: #000;}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.section {
+	min-height: 100vh;
+	display: flex;
+	// background-color: #999;
+	padding: 10% 10%;
+	position: relative;
+	flex-direction: column;
+}
+.content {
+	// background-color: #6ff;
+	flex: 1 1 auto;
+	margin: 0px auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+
+}
+.name {
+	font-size: 7vh;
+	//flex: 1 1 auto;
+	// align-items: center;
+	margin: auto;
+	width: 100%;
+	line-height: 10vh;
+	.name_1 {text-align: left;}
+	.name_2 {}
+	.name_3 {text-align: right;}
+}
+.arrow_dowm1 {
+	width: 100%;
+}
+
+
+
+.gender {
+	font-size: 5vh;
+	align-items: center;
+	padding: 0 0 1vh 0;
+	display: flex;
+}
+.women {
+	text-align: center;
+	margin: auto;
+}
+.man {
+	text-align: center;
+	margin: auto;
+}
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+/* Слайд */
+.slick-slide{
+	min-width: 0;
+}
+.slickslider{
+	width: 100%;
+	overflow: hidden;
+	-moz-box-sizing: border-box; /* в Firefox нужен префикс */
+    box-sizing: border-box;
+    align-items: center;
+	width: 100%;
+	//position: relative;
+}
+.photo {
+	opacity: 0.5;
+	transition: all 0.5s ease 0s;
+	margin: 0 1vh;
+	text-align: center;
+	img{
+		height: 80vh;
+	}
+}
+.photo.slick-center{
+    text-align: center;
+	opacity: 1;
+}
+.arrows {
+	justify-content: center;
+	padding: 1vh 0 0 0;
+	display: flex;
+
+}
+.slickslider .slick-arrow{
+ 	
+ }
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	margin: auto;
+	left: 5vh;
+	font-size: 0;
+	width: 16vh;
+	height: 4vh;
+	background: url('../../img/arrow L.png') 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	margin: 2vh auto;
+	right: 5vh;
+	width: 16vh;
+	height: 4vh;
+	font-size: 0;
+	background: url('../../img/arrow R.png') 0 0 / 100% no-repeat;
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+
+.arrows {
+	padding: 1vh 0 0 0;
+	display: flex;
+}
+.arrow_l {
+	margin: auto;
+	width: 15vh;}
+.arrow_r {
+	margin: auto;
+	width: 15vh;}
+
+
+
+.info {
+	padding-top: 3vh;
+	flex: 1 1 auto;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	font-size: 4vh;
+}
+.info__text {}
+.arrow_down2 {}
+
+
+
+.contacts {
+	display: flex;
+	justify-content: space-around;
+	padding: 10vh 0;
+}
+.contacts__instagram {
+	width: 10vh;
+	height: 10vh;
+}
+.contacts__telegram {
+	width: 10vh;
+	height: 10vh;
+}
+.contacts__whathapp {
+	width: 10vh;
+	height: 10vh;
+}
+
+
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	font-size: 2vh;
+	}
+
